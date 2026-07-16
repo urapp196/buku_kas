@@ -35,3 +35,33 @@ Thumbs.db
 /database/database.sqlite
 /buku_kas.sql
 /supabase_buku_kas.sql
+
+# Recommended additional ignores
+# Vercel / deployment
+.vercel
+.vercelignore
+
+# OS, editors, temp
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Node / package managers
+.npmrc
+npm-debug.log*
+yarn-error.log*
+.yarn-integrity
+.pnp.*
+
+# Caches & build tools
+.cache/
+/.parcel-cache
+/.turbo
+/dist
+/build
+
+# Misc
+.sass-cache
+.parcel-cache
+
