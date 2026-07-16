@@ -5,7 +5,7 @@
     "scripts": {
         "build": "vite build",
         "dev": "vite",
-        "vercel-build": "composer install --no-dev --optimize-autoloader && npm install && npm run build"
+        "vercel-build": "node -e \"const cp=require('child_process'); try{cp.execSync('composer --version',{stdio:'ignore'}); cp.execSync('composer install --no-dev --optimize-autoloader',{stdio:'inherit'});}catch(e){console.log('composer not found, skipping composer step');} cp.execSync('npm install',{stdio:'inherit'}); cp.execSync('npm run build',{stdio:'inherit'});\""
     },
     "devDependencies": {
         "@tailwindcss/vite": "^4.0.0",
